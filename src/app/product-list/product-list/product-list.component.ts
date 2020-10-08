@@ -20,4 +20,9 @@ export class ProductListComponent implements OnInit {
     window.alert("The Phone has been shared !")
   }
 
+  onNotify()
+  {
+    window.alert("You will be notify when the product goes on sale !")
+  }
+
 }
