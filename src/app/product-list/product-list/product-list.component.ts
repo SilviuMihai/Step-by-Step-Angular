@@ -15,4 +15,9 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  share()
+  {
+    window.alert("The Phone has been shared !")
+  }
+
 }
