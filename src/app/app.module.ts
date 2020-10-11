@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,7 @@ import { TopBarComponent } from './top-bar/top-bar/top-bar.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details/product-details.component';
 import { CartComponent } from './cart/cart/cart.component';
+import { ShippingComponent } from './shipping/shipping/shipping.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { CartComponent } from './cart/cart/cart.component';
     TopBarComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    CartComponent
+    CartComponent,
+    ShippingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
